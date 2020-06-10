@@ -1,0 +1,439 @@
+///////////////////////////////////// Question 1
+Welcome to Assigment #7: Integer Programming Problem
+
+Enter the number of variables: 2
+Enter the number of constraint equations: 2
+Enter Constraint equations with < , > or =
+-2 3 < 6
+6 1 < 30
+Enter the coefficients of expression and 1 if you want to maximise else -1
+5 7 1
+Number of Integer BVs = 0
+Number of Integer BVs = 0
+LFV = 0.800000
+IPP not reached, LFV exists = 0.800000, at x2
+lower branch = 4.000000, upper branch = 5.000000
+Lower branch tableau created:
+  Basic      X1       X2     sla1   sla2   sla3 Solution 
+    Z       -5.00    -7.00     0.00     0.00     0.00     0.00 
+  sla1    -2.00     3.00     1.00     0.00     0.00     6.00 
+  sla2     6.00     1.00     0.00     1.00     0.00    30.00 
+  sla3     0.00     1.00     0.00     0.00     1.00     4.00 
+
+
+The maximum value of the expression (5.00)x1 + (7.00)x2 is 49.66667
+for values of xi as
+[ 4.333 4.000 ]
+Final Simplex Tableau #2
+  Basic      X1       X2     sla1   sla2   sla3 Solution 
+    Z        0.00     0.00     0.00     0.83     6.17    49.67 
+    X2       0.00     1.00     0.00     0.00     1.00     4.00 
+  sla1     0.00     0.00     1.00     0.33    -3.33     2.67 
+    X1       1.00     0.00     0.00     0.17    -0.17     4.33 
+
+Number of Integer BVs = 1
+Number of Integer BVs = 1
+LFV = 0.333333
+IPP not reached, LFV exists = 0.333333, at x1
+lower branch = 4.000000, upper branch = 5.000000
+Lower branch tableau created:
+  Basic      X1       X2     sla1   sla2   sla3   sla4 Solution 
+    Z       -5.00    -7.00     0.00     0.00     0.00     0.00     0.00 
+  sla1    -2.00     3.00     1.00     0.00     0.00     0.00     6.00 
+  sla2     6.00     1.00     0.00     1.00     0.00     0.00    30.00 
+  sla3     0.00     1.00     0.00     0.00     1.00     0.00     4.00 
+  sla4     1.00     0.00     0.00     0.00     0.00     1.00     4.00 
+
+
+The maximum value of the expression (5.00)x1 + (7.00)x2 is 48.00000
+for values of xi as
+[ 4.000 4.000 ]
+Final Simplex Tableau #3
+  Basic      X1       X2     sla1   sla2   sla3   sla4 Solution 
+    Z        0.00     0.00     0.00     0.00     7.00     5.00    48.00 
+    X2       0.00     1.00     0.00     0.00     1.00     0.00     4.00 
+  sla2     0.00     0.00     0.00     1.00    -1.00    -6.00     2.00 
+    X1       1.00     0.00     0.00     0.00     0.00     1.00     4.00 
+  sla1     0.00     0.00     1.00     0.00    -3.00     2.00     2.00 
+
+Number of Integer BVs = 2
+IPP reached, number of Integer BVs (2) = number of input variables (2)
+Number of Integer BVs = 2
+IPP reached, number of Integer BVs (2) = number of input variables (2)
+Upper branch tableau created:
+  Basic      X1       X2    sur1   sla1   sla2   sla3   art1 Solution 
+    Z    -10005.00    -7.00 10000.00     0.00     0.00     0.00     0.00 -50000.00 
+  sla1    -2.00     3.00     0.00     1.00     0.00     0.00     0.00     6.00 
+  sla2     6.00     1.00     0.00     0.00     1.00     0.00     0.00    30.00 
+  sla3     0.00     1.00     0.00     0.00     0.00     1.00     0.00     4.00 
+  art1     1.00     0.00    -1.00     0.00     0.00     0.00     1.00     5.00 
+
+
+The maximum value of the expression (5.00)x1 + (7.00)x2 is 25.00000
+for values of xi as
+[ 5.000 0.000 ]
+Final Simplex Tableau #4
+  Basic      X1       X2    sur1   sla1   sla2   sla3   art1 Solution 
+    Z        0.00  1660.50 10000.00     0.00  1667.50     0.00     0.00    25.00 
+  sla1     0.00     3.33     0.00     1.00     0.33     0.00     0.00    16.00 
+    X1       1.00     0.17     0.00     0.00     0.17     0.00     0.00     5.00 
+  sla3     0.00     1.00     0.00     0.00     0.00     1.00     0.00     4.00 
+  art1     0.00    -0.17    -1.00     0.00    -0.17     0.00     1.00     0.00 
+
+Number of Integer BVs = 2
+IPP reached, number of Integer BVs (2) = number of input variables (2)
+Number of Integer BVs = 2
+IPP reached, number of Integer BVs (2) = number of input variables (2)
+Upper branch tableau created:
+  Basic      X1       X2    sur1   sla1   sla2   art1 Solution 
+    Z       -5.00 -10007.00 10000.00     0.00     0.00     0.00 -50000.00 
+  sla1    -2.00     3.00     0.00     1.00     0.00     0.00     6.00 
+  sla2     6.00     1.00     0.00     0.00     1.00     0.00    30.00 
+  art1     0.00     1.00    -1.00     0.00     0.00     1.00     5.00 
+
+
+The LPP is infeasible
+Final Simplex Tableau #3
+  Basic      X1       X2    sur1   sla1   sla2   art1 Solution 
+    Z        0.00     0.00 10000.00  3001.85  1001.45     0.00 -1945.40 
+    X2       0.00     1.00     0.00     0.30     0.10     0.00     4.80 
+    X1       1.00     0.00     0.00    -0.05     0.15     0.00     4.20 
+  art1     0.00     0.00    -1.00    -0.30    -0.10     1.00     0.20 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Choose one of the following options
+1: List all BFS
+2: Number of iterations to solve the problem
+3: List of all Non-basic variables along with net evaluations in ith iteration
+4: List of Basic variables along with min ratios in ith iteration
+5: Simplex table of ith iteration
+6: optimal solution (if exists else a report on others)
+7: Initial Simplex Table
+8: IPP
+0: to exit
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Menu Option Chosen: 8
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Here are the IPP Solutions:
+x1 = 4.000000, x2 = 4.000000
+x1 = 5.000000, x2 = 0.000000
+The Optimal Solution is:
+ Z* = 48  [  x*1 = 4.000000  x*2 = 4.000000  ]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Menu Option Chosen: 7
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Simplex table of 0-th iteration
+  Basic      X1       X2     sla1   sla2 Solution 
+    Z       -5.00    -7.00     0.00     0.00     0.00 
+  sla1    -2.00     3.00     1.00     0.00     6.00 
+  sla2     6.00     1.00     0.00     1.00    30.00 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Menu Option Chosen: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+////////////////////////////////////// Question 2
+Welcome to Assigment #7: Integer Programming Problem
+
+Enter the number of variables: 2
+Enter the number of constraint equations: 2
+Enter Constraint equations with < , > or =
+6 5 < 25
+1 3 < 10
+Enter the coefficients of expression and 1 if you want to maximise else -1
+2 3 1
+Number of Integer BVs = 0
+Number of Integer BVs = 0
+LFV = 0.923077
+IPP not reached, LFV exists = 0.923077, at x1
+lower branch = 1.000000, upper branch = 2.000000
+Lower branch tableau created:
+  Basic      X1       X2     sla1   sla2   sla3 Solution 
+    Z       -2.00    -3.00     0.00     0.00     0.00     0.00 
+  sla1     6.00     5.00     1.00     0.00     0.00    25.00 
+  sla2     1.00     3.00     0.00     1.00     0.00    10.00 
+  sla3     1.00     0.00     0.00     0.00     1.00     1.00 
+
+
+The maximum value of the expression (2.00)x1 + (3.00)x2 is 11.00000
+for values of xi as
+[ 1.000 3.000 ]
+Final Simplex Tableau #2
+  Basic      X1       X2     sla1   sla2   sla3 Solution 
+    Z        0.00     0.00     0.00     1.00     1.00    11.00 
+  sla1     0.00     0.00     1.00    -1.67    -4.33     4.00 
+    X2       0.00     1.00     0.00     0.33    -0.33     3.00 
+    X1       1.00     0.00     0.00     0.00     1.00     1.00 
+
+Number of Integer BVs = 2
+IPP reached, number of Integer BVs (2) = number of input variables (2)
+Number of Integer BVs = 2
+IPP reached, number of Integer BVs (2) = number of input variables (2)
+Upper branch tableau created:
+  Basic      X1       X2    sur1   sla1   sla2   art1 Solution 
+    Z    -10002.00    -3.00 10000.00     0.00     0.00     0.00 -20000.00 
+  sla1     6.00     5.00     0.00     1.00     0.00     0.00    25.00 
+  sla2     1.00     3.00     0.00     0.00     1.00     0.00    10.00 
+  art1     1.00     0.00    -1.00     0.00     0.00     1.00     2.00 
+
+
+The maximum value of the expression (2.00)x1 + (3.00)x2 is 11.80000
+for values of xi as
+[ 2.000 2.600 ]
+Final Simplex Tableau #3
+  Basic      X1       X2    sur1   sla1   sla2   art1 Solution 
+    Z        0.00     0.00     1.60     0.60     0.00  9998.40    11.80 
+    X2       0.00     1.00     1.20     0.20     0.00    -1.20     2.60 
+  sla2     0.00     0.00    -2.60    -0.60     1.00     2.60     0.20 
+    X1       1.00     0.00    -1.00     0.00     0.00     1.00     2.00 
+
+Number of Integer BVs = 1
+Number of Integer BVs = 1
+LFV = 0.600000
+IPP not reached, LFV exists = 0.600000, at x2
+lower branch = 2.000000, upper branch = 3.000000
+Lower branch tableau created:
+  Basic      X1       X2    sur1   sla1   sla2   art1   sla3 Solution 
+    Z    -10002.00    -3.00 10000.00     0.00     0.00     0.00     0.00 -20000.00 
+  sla1     6.00     5.00     0.00     1.00     0.00     0.00     0.00    25.00 
+  sla2     1.00     3.00     0.00     0.00     1.00     0.00     0.00    10.00 
+  art1     1.00     0.00    -1.00     0.00     0.00     1.00     0.00     2.00 
+  sla3     0.00     1.00     0.00     0.00     0.00     0.00     1.00     2.00 
+
+
+The maximum value of the expression (2.00)x1 + (3.00)x2 is 11.00000
+for values of xi as
+[ 2.500 2.000 ]
+Final Simplex Tableau #5
+  Basic      X1       X2    sur1   sla1   sla2   art1   sla3 Solution 
+    Z        0.00     0.00     0.00     0.33     0.00 10000.00     1.33    11.00 
+ sur1     0.00     0.00     1.00     0.17     0.00    -1.00    -0.83     0.50 
+  sla2     0.00     0.00     0.00    -0.17     1.00     0.00    -2.17     1.50 
+    X1       1.00     0.00     0.00     0.17     0.00     0.00    -0.83     2.50 
+    X2       0.00     1.00     0.00     0.00     0.00     0.00     1.00     2.00 
+
+Number of Integer BVs = 1
+Number of Integer BVs = 1
+LFV = 0.500000
+IPP not reached, LFV exists = 0.500000, at x1
+lower branch = 2.000000, upper branch = 3.000000
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Choose one of the following options
+1: List all BFS
+2: Number of iterations to solve the problem
+3: List of all Non-basic variables along with net evaluations in ith iteration
+4: List of Basic variables along with min ratios in ith iteration
+5: Simplex table of ith iteration
+6: optimal solution (if exists else a report on others)
+7: Initial Simplex Table
+8: IPP
+0: to exit
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Menu Option Chosen: 8
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Here are the IPP Solutions:
+x1 = 2.000000, x2 = 2.000000
+The Optimal Solution is:
+ Z* = 10  [  x*1 = 2.000000  x*2 = 2.000000  ]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Menu Option Chosen: 7
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Simplex table of 0-th iteration
+  Basic      X1       X2     sla1   sla2 Solution 
+    Z       -2.00    -3.00     0.00     0.00     0.00 
+  sla1     6.00     5.00     1.00     0.00    25.00 
+  sla2     1.00     3.00     0.00     1.00    10.00 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Menu Option Chosen: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+///////////////////////////// Question 3
+Welcome to Assigment #4
+
+Enter the number of variables: 3
+Enter the number of constraint equations: 3
+Enter Constraint equations with < , > or =
+-1 2 1 <4
+0 4 -3 < 2
+1 -3 2 < 3
+Enter the coefficients of expression and 1 if you want to maximise else -1
+3 1 3 1
+Initial Simplex Tableau #1
+  Basic      X1       X2       X3     sla1   sla2   sla3 Solution 
+    Z       -3.00    -1.00    -3.00     0.00     0.00     0.00     0.00 
+  sla1     0.00     0.00     1.50     1.00     0.00     0.00     4.00 
+  sla2     0.00     0.00    -0.67     0.00     1.00     0.00     2.00 
+  sla3     0.00     0.00     4.00     0.00     0.00     1.00     3.00 
+
+Iteration #1:
+The expression is unbounded
+Final Simplex Tableau #1
+  Basic      X1       X2       X3     sla1   sla2   sla3 Solution 
+    Z       -3.00    -1.00    -3.00     0.00     0.00     0.00     0.00 
+  sla1     0.00     0.00     1.50     1.00     0.00     0.00     4.00 
+  sla2     0.00     0.00    -0.67     0.00     1.00     0.00     2.00 
+  sla3     0.00     0.00     4.00     0.00     0.00     1.00     3.00 
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Choose one of the following options
+1: List all BFS
+2: Number of iterations to solve the problem
+3: List of all Non-basic variables along with net evaluations in ith iteration
+4: List of Basic variables along with min ratios in ith iteration
+5: Simplex table of ith iteration
+6: optimal solution (if exists else a report on others)
+7: Final Simplex Table
+8: IPP
+0: to exit
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+////////////////////////////////////// Question 4
+Welcome to Assigment #7: Integer Programming Problem
+
+Enter the number of variables: 3
+Enter the number of constraint equations: 2
+Enter Constraint equations with < , > or =
+2 20 4 < 15
+6 20 4 = 20
+Enter the coefficients of expression and 1 if you want to maximise else -1
+2 20 -10 1
+Number of Integer BVs = 1
+Number of Integer BVs = 1
+LFV = 0.625000
+IPP not reached, LFV exists = 0.625000, at x2
+lower branch = 0.000000, upper branch = 1.000000
+Lower branch tableau created:
+  Basic      X1       X2       X3     sla1   art1   sla2 Solution 
+    Z    -60002.00 -200020.00 -39990.00     0.00     0.00     0.00 -200000.00 
+  sla1     2.00    20.00     4.00     1.00     0.00     0.00    15.00 
+  art1     6.00    20.00     4.00     0.00     1.00     0.00    20.00 
+  sla2     0.00     1.00     0.00     0.00     0.00     1.00     0.00 
+
+
+The maximum value of the expression (2.00)x1 + (20.00)x2 + (-10.00)x3 is 6.66667
+for values of xi as
+[ 3.333 0.000 0.000 ]
+Final Simplex Tableau #2
+  Basic      X1       X2       X3     sla1   art1   sla2 Solution 
+    Z        0.00     0.00    11.33     0.00 10000.33    13.33     6.67 
+  sla1     0.00     0.00     2.67     1.00    -0.33   -13.33     8.33 
+    X1       1.00     0.00     0.67     0.00     0.17    -3.33     3.33 
+    X2       0.00     1.00     0.00     0.00     0.00     1.00     0.00 
+
+Number of Integer BVs = 2
+Number of Integer BVs = 2
+LFV = 0.333333
+IPP not reached, LFV exists = 0.333333, at x1
+lower branch = 3.000000, upper branch = 4.000000
+Lower branch tableau created:
+  Basic      X1       X2       X3     sla1   art1   sla2   sla3 Solution 
+    Z    -60002.00 -200020.00 -39990.00     0.00     0.00     0.00     0.00 -200000.00 
+  sla1     2.00    20.00     4.00     1.00     0.00     0.00     0.00    15.00 
+  art1     6.00    20.00     4.00     0.00     1.00     0.00     0.00    20.00 
+  sla2     0.00     1.00     0.00     0.00     0.00     1.00     0.00     0.00 
+  sla3     1.00     0.00     0.00     0.00     0.00     0.00     1.00     3.00 
+
+
+The maximum value of the expression (2.00)x1 + (20.00)x2 + (-10.00)x3 is 1.00000
+for values of xi as
+[ 3.000 0.000 0.500 ]
+Final Simplex Tableau #3
+  Basic      X1       X2       X3     sla1   art1   sla2   sla3 Solution 
+    Z        0.00     0.00     0.00     0.00  9997.50    70.00    17.00     1.00 
+  sla1     0.00     0.00     0.00     1.00    -1.00     0.00     4.00     7.00 
+    X3       0.00     0.00     1.00     0.00     0.25    -5.00    -1.50     0.50 
+    X2       0.00     1.00     0.00     0.00     0.00     1.00     0.00     0.00 
+    X1       1.00     0.00     0.00     0.00     0.00     0.00     1.00     3.00 
+
+Number of Integer BVs = 2
+Number of Integer BVs = 2
+LFV = 0.500000
+IPP not reached, LFV exists = 0.500000, at x3
+lower branch = 0.000000, upper branch = 1.000000
+Lower branch tableau created:
+  Basic      X1       X2       X3     sla1   art1   sla2   sla3   sla4 Solution 
+    Z    -60002.00 -200020.00 -39990.00     0.00     0.00     0.00     0.00     0.00 -200000.00 
+  sla1     2.00    20.00     4.00     1.00     0.00     0.00     0.00     0.00    15.00 
+  art1     6.00    20.00     4.00     0.00     1.00     0.00     0.00     0.00    20.00 
+  sla2     0.00     1.00     0.00     0.00     0.00     1.00     0.00     0.00     0.00 
+  sla3     1.00     0.00     0.00     0.00     0.00     0.00     1.00     0.00     3.00 
+  sla4     0.00     0.00     1.00     0.00     0.00     0.00     0.00     1.00     0.00 
+
+
+The LPP is infeasible
+Final Simplex Tableau #4
+  Basic      X1       X2       X3     sla1   art1   sla2   sla3   sla4 Solution 
+    Z        0.00     0.00     0.00     0.00     0.00 200020.00 60002.00 39990.00 -19994.00 
+  sla1     0.00     0.00     0.00     1.00     0.00   -20.00    -2.00    -4.00     9.00 
+  art1     0.00     0.00     0.00     0.00     1.00   -20.00    -6.00    -4.00     2.00 
+    X2       0.00     1.00     0.00     0.00     0.00     1.00     0.00     0.00     0.00 
+    X1       1.00     0.00     0.00     0.00     0.00     0.00     1.00     0.00     3.00 
+    X3       0.00     0.00     1.00     0.00     0.00     0.00     0.00     1.00     0.00 
+
+Upper branch tableau created:
+  Basic      X1       X2       X3    sur1   sla1   art1   sla2   sla3   art2 Solution 
+    Z    -60002.00 -200020.00 -49990.00 10000.00     0.00     0.00     0.00     0.00     0.00 -210000.00 
+  sla1     2.00    20.00     4.00     0.00     1.00     0.00     0.00     0.00     0.00    15.00 
+  art1     6.00    20.00     4.00     0.00     0.00     1.00     0.00     0.00     0.00    20.00 
+  sla2     0.00     1.00     0.00     0.00     0.00     0.00     1.00     0.00     0.00     0.00 
+  sla3     1.00     0.00     0.00     0.00     0.00     0.00     0.00     1.00     0.00     3.00 
+  art2     0.00     0.00     1.00    -1.00     0.00     0.00     0.00     0.00     1.00     1.00 
+
+
+The maximum value of the expression (2.00)x1 + (20.00)x2 + (-10.00)x3 is -4.66667
+for values of xi as
+[ 2.667 0.000 1.000 ]
+Final Simplex Tableau #5
+  Basic      X1       X2       X3    sur1   sla1   art1   sla2   sla3   art2 Solution 
+    Z        0.00     0.00     0.00    11.33     0.00 10000.33    13.33     0.00  9988.67    -4.67 
+  sla1     0.00     0.00     0.00     2.67     1.00    -0.33   -13.33     0.00    -2.67     5.67 
+    X3       0.00     0.00     1.00    -1.00     0.00     0.00     0.00     0.00     1.00     1.00 
+    X2       0.00     1.00     0.00     0.00     0.00     0.00     1.00     0.00     0.00     0.00 
+    X1       1.00     0.00     0.00     0.67     0.00     0.17    -3.33     0.00    -0.67     2.67 
+  sla3     0.00     0.00     0.00    -0.67     0.00    -0.17     3.33     1.00     0.67     0.33 
+
+Number of Integer BVs = 2
+Number of Integer BVs = 2
+LFV = 0.666667
+IPP not reached, LFV exists = 0.666667, at x1
+lower branch = 2.000000, upper branch = 3.000000
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Choose one of the following options
+1: List all BFS
+2: Number of iterations to solve the problem
+3: List of all Non-basic variables along with net evaluations in ith iteration
+4: List of Basic variables along with min ratios in ith iteration
+5: Simplex table of ith iteration
+6: optimal solution (if exists else a report on others)
+7: Initial Simplex Table
+8: IPP
+0: to exit
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Menu Option Chosen: 8
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Here are the IPP Solutions:
+x1 = 2.000000, x2 = 0.000000, x3 = 2.000000
+The Optimal Solution is:
+ Z* = -16  [  x*1 = 2.000000  x*2 = 0.000000  x*2 = 2.000000  ]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Menu Option Chosen: 7
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Simplex table of 0-th iteration
+  Basic      X1       X2      X2     sla1   sla2 Solution 
+    Z       -2.00    -20.00    10.00     0.00     0.00     0.00 
+  sla1    -2.00    -1.00     1.00    1.00     0.00   -10.00 
+  sla2     0.00     1.00    -1.00    0.00     1.00   -10.00 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Menu Option Chosen: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
